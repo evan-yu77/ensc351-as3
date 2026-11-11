@@ -86,10 +86,24 @@ CMakeFiles/beatbox.dir/app/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/app/src/main.c.s"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/app/src/main.c -o CMakeFiles/beatbox.dir/app/src/main.c.s
 
+CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o: CMakeFiles/beatbox.dir/flags.make
+CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o: hal/src/accelerometer.c
+CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o -MF CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o.d -o CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/accelerometer.c
+
+CMakeFiles/beatbox.dir/hal/src/accelerometer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/beatbox.dir/hal/src/accelerometer.c.i"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eya47/ensc351/work/audioTest/hal/src/accelerometer.c > CMakeFiles/beatbox.dir/hal/src/accelerometer.c.i
+
+CMakeFiles/beatbox.dir/hal/src/accelerometer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/hal/src/accelerometer.c.s"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/hal/src/accelerometer.c -o CMakeFiles/beatbox.dir/hal/src/accelerometer.c.s
+
 CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o: CMakeFiles/beatbox.dir/flags.make
 CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o: hal/src/audioMixer.c
 CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o -MF CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o.d -o CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/audioMixer.c
 
 CMakeFiles/beatbox.dir/hal/src/audioMixer.c.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/beatbox.dir/hal/src/audioMixer.c.s: cmake_force
 CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o: CMakeFiles/beatbox.dir/flags.make
 CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o: hal/src/beatGenerator.c
 CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o -MF CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o.d -o CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/beatGenerator.c
 
 CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.i: cmake_force
@@ -114,22 +128,88 @@ CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.s"
 	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/hal/src/beatGenerator.c -o CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.s
 
+CMakeFiles/beatbox.dir/hal/src/encoder.c.o: CMakeFiles/beatbox.dir/flags.make
+CMakeFiles/beatbox.dir/hal/src/encoder.c.o: hal/src/encoder.c
+CMakeFiles/beatbox.dir/hal/src/encoder.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/beatbox.dir/hal/src/encoder.c.o"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/encoder.c.o -MF CMakeFiles/beatbox.dir/hal/src/encoder.c.o.d -o CMakeFiles/beatbox.dir/hal/src/encoder.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/encoder.c
+
+CMakeFiles/beatbox.dir/hal/src/encoder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/beatbox.dir/hal/src/encoder.c.i"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eya47/ensc351/work/audioTest/hal/src/encoder.c > CMakeFiles/beatbox.dir/hal/src/encoder.c.i
+
+CMakeFiles/beatbox.dir/hal/src/encoder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/hal/src/encoder.c.s"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/hal/src/encoder.c -o CMakeFiles/beatbox.dir/hal/src/encoder.c.s
+
+CMakeFiles/beatbox.dir/hal/src/joystick.c.o: CMakeFiles/beatbox.dir/flags.make
+CMakeFiles/beatbox.dir/hal/src/joystick.c.o: hal/src/joystick.c
+CMakeFiles/beatbox.dir/hal/src/joystick.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/beatbox.dir/hal/src/joystick.c.o"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/joystick.c.o -MF CMakeFiles/beatbox.dir/hal/src/joystick.c.o.d -o CMakeFiles/beatbox.dir/hal/src/joystick.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/joystick.c
+
+CMakeFiles/beatbox.dir/hal/src/joystick.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/beatbox.dir/hal/src/joystick.c.i"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eya47/ensc351/work/audioTest/hal/src/joystick.c > CMakeFiles/beatbox.dir/hal/src/joystick.c.i
+
+CMakeFiles/beatbox.dir/hal/src/joystick.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/hal/src/joystick.c.s"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/hal/src/joystick.c -o CMakeFiles/beatbox.dir/hal/src/joystick.c.s
+
+CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o: CMakeFiles/beatbox.dir/flags.make
+CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o: hal/src/periodTimer.c
+CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o -MF CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o.d -o CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/periodTimer.c
+
+CMakeFiles/beatbox.dir/hal/src/periodTimer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/beatbox.dir/hal/src/periodTimer.c.i"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eya47/ensc351/work/audioTest/hal/src/periodTimer.c > CMakeFiles/beatbox.dir/hal/src/periodTimer.c.i
+
+CMakeFiles/beatbox.dir/hal/src/periodTimer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/hal/src/periodTimer.c.s"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/hal/src/periodTimer.c -o CMakeFiles/beatbox.dir/hal/src/periodTimer.c.s
+
+CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o: CMakeFiles/beatbox.dir/flags.make
+CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o: hal/src/textDisplay.c
+CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o: CMakeFiles/beatbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o -MF CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o.d -o CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o -c /home/eya47/ensc351/work/audioTest/hal/src/textDisplay.c
+
+CMakeFiles/beatbox.dir/hal/src/textDisplay.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/beatbox.dir/hal/src/textDisplay.c.i"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eya47/ensc351/work/audioTest/hal/src/textDisplay.c > CMakeFiles/beatbox.dir/hal/src/textDisplay.c.i
+
+CMakeFiles/beatbox.dir/hal/src/textDisplay.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/beatbox.dir/hal/src/textDisplay.c.s"
+	/usr/bin/aarch64-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eya47/ensc351/work/audioTest/hal/src/textDisplay.c -o CMakeFiles/beatbox.dir/hal/src/textDisplay.c.s
+
 # Object files for target beatbox
 beatbox_OBJECTS = \
 "CMakeFiles/beatbox.dir/app/src/main.c.o" \
+"CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o" \
 "CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o" \
-"CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o"
+"CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o" \
+"CMakeFiles/beatbox.dir/hal/src/encoder.c.o" \
+"CMakeFiles/beatbox.dir/hal/src/joystick.c.o" \
+"CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o" \
+"CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o"
 
 # External object files for target beatbox
 beatbox_EXTERNAL_OBJECTS =
 
 beatbox: CMakeFiles/beatbox.dir/app/src/main.c.o
+beatbox: CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o
 beatbox: CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o
 beatbox: CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o
+beatbox: CMakeFiles/beatbox.dir/hal/src/encoder.c.o
+beatbox: CMakeFiles/beatbox.dir/hal/src/joystick.c.o
+beatbox: CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o
+beatbox: CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o
 beatbox: CMakeFiles/beatbox.dir/build.make
 beatbox: CMakeFiles/beatbox.dir/compiler_depend.ts
 beatbox: CMakeFiles/beatbox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable beatbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/eya47/ensc351/work/audioTest/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable beatbox"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/beatbox.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E make_directory /home/eya47/ensc351/public/myApps
 	/usr/bin/cmake -E copy /home/eya47/ensc351/work/audioTest/beatbox /home/eya47/ensc351/public/myApps/

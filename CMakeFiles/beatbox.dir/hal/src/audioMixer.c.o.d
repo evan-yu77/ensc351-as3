@@ -116,4 +116,5 @@ CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o: \
  /usr/aarch64-linux-gnu/include/bits/posix1_lim.h \
  /usr/aarch64-linux-gnu/include/bits/local_lim.h \
  /usr/aarch64-linux-gnu/include/linux/limits.h \
- /usr/aarch64-linux-gnu/include/bits/posix2_lim.h
+ /usr/aarch64-linux-gnu/include/bits/posix2_lim.h \
+ /home/eya47/ensc351/work/audioTest/hal/include/hal/periodTimer.h

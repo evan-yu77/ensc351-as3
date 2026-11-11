@@ -114,3 +114,17 @@ void* beatThread(void* arg) {
     }
     return NULL;
 }
+
+int BeatGenerator_getMode(void) {
+    pthread_mutex_lock(&beatMutex);
+    int mode = currentMode;
+    pthread_mutex_unlock(&beatMutex);
+    return mode;
+}
+
+int BeatGenerator_getBPM(void) {
+    pthread_mutex_lock(&beatMutex);
+    int bpm = currentBPM;
+    pthread_mutex_unlock(&beatMutex);
+    return bpm;
+}

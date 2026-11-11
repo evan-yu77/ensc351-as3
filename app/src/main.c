@@ -4,6 +4,8 @@
 #include <pthread.h>
 #include "audioMixer.h"
 #include "beatGenerator.h"
+#include "textDisplay.h"
+#include "periodTimer.h"
 #define BASE_DRUM_FILE "beatbox-wav-files/04021f36f9dec72274b75b5f6af47d66/100051__menegass__gui-drum-bd-hard.wav"
 #define HI_HAT_FILE "beatbox-wav-files/04021f36f9dec72274b75b5f6af47d66/100053__menegass__gui-drum-cc.wav"
 #define SNARE_FILE "beatbox-wav-files/04021f36f9dec72274b75b5f6af47d66/100059__menegass__gui-drum-snare-soft.wav"
@@ -11,6 +13,7 @@
 wavedata_t baseDrum;
 wavedata_t hiHat;
 wavedata_t snare;
+volatile bool mainStopping = false;
 
 int main() {
     printf("Initializing Audio Mixer...\n");
@@ -24,7 +27,9 @@ int main() {
     pthread_t beatThreadId;
     pthread_create(&beatThreadId, NULL, beatThread, NULL);
 
-    while (true) {
+    TextDisplay_init();
+    
+    while (!mainStopping) {
         sleep(1);
     }
     
@@ -32,6 +37,8 @@ int main() {
     AudioMixer_freeWaveFileData(&hiHat);
     AudioMixer_freeWaveFileData(&snare);
     AudioMixer_cleanup();
+
+    TextDisplay_cleanup();
     
     return 0;
 }

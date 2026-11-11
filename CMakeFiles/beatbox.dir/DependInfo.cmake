@@ -9,8 +9,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/eya47/ensc351/work/audioTest/app/src/main.c" "CMakeFiles/beatbox.dir/app/src/main.c.o" "gcc" "CMakeFiles/beatbox.dir/app/src/main.c.o.d"
+  "/home/eya47/ensc351/work/audioTest/hal/src/accelerometer.c" "CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o.d"
   "/home/eya47/ensc351/work/audioTest/hal/src/audioMixer.c" "CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o.d"
   "/home/eya47/ensc351/work/audioTest/hal/src/beatGenerator.c" "CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o.d"
+  "/home/eya47/ensc351/work/audioTest/hal/src/encoder.c" "CMakeFiles/beatbox.dir/hal/src/encoder.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/encoder.c.o.d"
+  "/home/eya47/ensc351/work/audioTest/hal/src/joystick.c" "CMakeFiles/beatbox.dir/hal/src/joystick.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/joystick.c.o.d"
+  "/home/eya47/ensc351/work/audioTest/hal/src/periodTimer.c" "CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o.d"
+  "/home/eya47/ensc351/work/audioTest/hal/src/textDisplay.c" "CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o" "gcc" "CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o.d"
   "" "beatbox" "gcc" "CMakeFiles/beatbox.dir/link.d"
   )
 

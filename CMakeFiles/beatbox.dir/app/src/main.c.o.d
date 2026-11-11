@@ -64,4 +64,6 @@ CMakeFiles/beatbox.dir/app/src/main.c.o: \
  /usr/aarch64-linux-gnu/include/bits/pthread_stack_min-dynamic.h \
  /usr/aarch64-linux-gnu/include/bits/pthread_stack_min.h \
  /home/eya47/ensc351/work/audioTest/hal/include/hal/audioMixer.h \
- /home/eya47/ensc351/work/audioTest/hal/include/hal/beatGenerator.h
+ /home/eya47/ensc351/work/audioTest/hal/include/hal/beatGenerator.h \
+ /home/eya47/ensc351/work/audioTest/hal/include/hal/textDisplay.h \
+ /home/eya47/ensc351/work/audioTest/hal/include/hal/periodTimer.h

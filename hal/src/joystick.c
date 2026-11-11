@@ -1,4 +1,4 @@
-#include "hal/joystick.h"
+#include "joystick.h"
 #include <sys/ioctl.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -17,6 +17,7 @@
 static bool stopping = false;
 static pthread_t joystickThreadId;
 static int spi_fd = -1;
+static pthread_mutex_t spiMutex = PTHREAD_MUTEX_INITIALIZER;
 
 static void initSPI(void) {
     spi_fd = open(SPI_DEV, O_RDWR);
@@ -34,7 +35,7 @@ static void initSPI(void) {
     ioctl(spi_fd, SPI_IOC_WR_MAX_SPEED_HZ, &speed);
 }
 
-static int readADC(int channel) {
+int readADC(int channel) {
     if (channel < 0 || channel > 7) return -1;
 
     uint8_t tx[] = {
@@ -43,6 +44,7 @@ static int readADC(int channel) {
         0x00                    
     };
     uint8_t rx[3] = {0};
+
 
     struct spi_ioc_transfer tr = {
         .tx_buf = (unsigned long)tx,
@@ -53,7 +55,15 @@ static int readADC(int channel) {
         .bits_per_word = 8
     };
 
-    if (ioctl(spi_fd, SPI_IOC_MESSAGE(1), &tr) < 1) {
+
+
+    pthread_mutex_lock(&spiMutex);
+
+    int ret = ioctl(spi_fd, SPI_IOC_MESSAGE(1), &tr);
+
+    pthread_mutex_unlock(&spiMutex);
+
+    if (ret < 1) {
         perror("ERROR: SPI transaction failed");
         return -1;
     }

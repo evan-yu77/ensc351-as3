@@ -8,7 +8,7 @@ add_executable(beatbox ${APP_SOURCES} ${HAL_SOURCES})
 
 target_include_directories(beatbox PRIVATE hal/include/hal app/include)
 
-target_link_libraries(beatbox asound)
+target_link_libraries(beatbox asound gpiod)
 
 set(DEPLOY_DIR "$ENV{HOME}/ensc351/public/myApps")
 

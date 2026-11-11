@@ -153,6 +153,30 @@ app/src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/app/src/main.c.s
 .PHONY : app/src/main.c.s
 
+hal/src/accelerometer.o: hal/src/accelerometer.c.o
+.PHONY : hal/src/accelerometer.o
+
+# target to build an object file
+hal/src/accelerometer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/accelerometer.c.o
+.PHONY : hal/src/accelerometer.c.o
+
+hal/src/accelerometer.i: hal/src/accelerometer.c.i
+.PHONY : hal/src/accelerometer.i
+
+# target to preprocess a source file
+hal/src/accelerometer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/accelerometer.c.i
+.PHONY : hal/src/accelerometer.c.i
+
+hal/src/accelerometer.s: hal/src/accelerometer.c.s
+.PHONY : hal/src/accelerometer.s
+
+# target to generate assembly for a file
+hal/src/accelerometer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/accelerometer.c.s
+.PHONY : hal/src/accelerometer.c.s
+
 hal/src/audioMixer.o: hal/src/audioMixer.c.o
 .PHONY : hal/src/audioMixer.o
 
@@ -201,6 +225,102 @@ hal/src/beatGenerator.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.s
 .PHONY : hal/src/beatGenerator.c.s
 
+hal/src/encoder.o: hal/src/encoder.c.o
+.PHONY : hal/src/encoder.o
+
+# target to build an object file
+hal/src/encoder.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/encoder.c.o
+.PHONY : hal/src/encoder.c.o
+
+hal/src/encoder.i: hal/src/encoder.c.i
+.PHONY : hal/src/encoder.i
+
+# target to preprocess a source file
+hal/src/encoder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/encoder.c.i
+.PHONY : hal/src/encoder.c.i
+
+hal/src/encoder.s: hal/src/encoder.c.s
+.PHONY : hal/src/encoder.s
+
+# target to generate assembly for a file
+hal/src/encoder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/encoder.c.s
+.PHONY : hal/src/encoder.c.s
+
+hal/src/joystick.o: hal/src/joystick.c.o
+.PHONY : hal/src/joystick.o
+
+# target to build an object file
+hal/src/joystick.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/joystick.c.o
+.PHONY : hal/src/joystick.c.o
+
+hal/src/joystick.i: hal/src/joystick.c.i
+.PHONY : hal/src/joystick.i
+
+# target to preprocess a source file
+hal/src/joystick.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/joystick.c.i
+.PHONY : hal/src/joystick.c.i
+
+hal/src/joystick.s: hal/src/joystick.c.s
+.PHONY : hal/src/joystick.s
+
+# target to generate assembly for a file
+hal/src/joystick.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/joystick.c.s
+.PHONY : hal/src/joystick.c.s
+
+hal/src/periodTimer.o: hal/src/periodTimer.c.o
+.PHONY : hal/src/periodTimer.o
+
+# target to build an object file
+hal/src/periodTimer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/periodTimer.c.o
+.PHONY : hal/src/periodTimer.c.o
+
+hal/src/periodTimer.i: hal/src/periodTimer.c.i
+.PHONY : hal/src/periodTimer.i
+
+# target to preprocess a source file
+hal/src/periodTimer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/periodTimer.c.i
+.PHONY : hal/src/periodTimer.c.i
+
+hal/src/periodTimer.s: hal/src/periodTimer.c.s
+.PHONY : hal/src/periodTimer.s
+
+# target to generate assembly for a file
+hal/src/periodTimer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/periodTimer.c.s
+.PHONY : hal/src/periodTimer.c.s
+
+hal/src/textDisplay.o: hal/src/textDisplay.c.o
+.PHONY : hal/src/textDisplay.o
+
+# target to build an object file
+hal/src/textDisplay.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/textDisplay.c.o
+.PHONY : hal/src/textDisplay.c.o
+
+hal/src/textDisplay.i: hal/src/textDisplay.c.i
+.PHONY : hal/src/textDisplay.i
+
+# target to preprocess a source file
+hal/src/textDisplay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/textDisplay.c.i
+.PHONY : hal/src/textDisplay.c.i
+
+hal/src/textDisplay.s: hal/src/textDisplay.c.s
+.PHONY : hal/src/textDisplay.s
+
+# target to generate assembly for a file
+hal/src/textDisplay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beatbox.dir/build.make CMakeFiles/beatbox.dir/hal/src/textDisplay.c.s
+.PHONY : hal/src/textDisplay.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +333,27 @@ help:
 	@echo "... app/src/main.o"
 	@echo "... app/src/main.i"
 	@echo "... app/src/main.s"
+	@echo "... hal/src/accelerometer.o"
+	@echo "... hal/src/accelerometer.i"
+	@echo "... hal/src/accelerometer.s"
 	@echo "... hal/src/audioMixer.o"
 	@echo "... hal/src/audioMixer.i"
 	@echo "... hal/src/audioMixer.s"
 	@echo "... hal/src/beatGenerator.o"
 	@echo "... hal/src/beatGenerator.i"
 	@echo "... hal/src/beatGenerator.s"
+	@echo "... hal/src/encoder.o"
+	@echo "... hal/src/encoder.i"
+	@echo "... hal/src/encoder.s"
+	@echo "... hal/src/joystick.o"
+	@echo "... hal/src/joystick.i"
+	@echo "... hal/src/joystick.s"
+	@echo "... hal/src/periodTimer.o"
+	@echo "... hal/src/periodTimer.i"
+	@echo "... hal/src/periodTimer.s"
+	@echo "... hal/src/textDisplay.o"
+	@echo "... hal/src/textDisplay.i"
+	@echo "... hal/src/textDisplay.s"
 .PHONY : help
 
 
