@@ -1,0 +1,3 @@
+/home/eya47/ensc351/work/audioTest/CMakeFiles/beatbox.dir
+/home/eya47/ensc351/work/audioTest/CMakeFiles/edit_cache.dir
+/home/eya47/ensc351/work/audioTest/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-gcc -Wl,--dependency-file=CMakeFiles/beatbox.dir/link.d CMakeFiles/beatbox.dir/app/src/main.c.o CMakeFiles/beatbox.dir/hal/src/audioMixer.c.o CMakeFiles/beatbox.dir/hal/src/beatGenerator.c.o -o beatbox  -lasound

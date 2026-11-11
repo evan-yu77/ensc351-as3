@@ -1,0 +1,10 @@
+#ifndef BEAT_GENERATOR_H
+#define BEAT_GENERATOR_H
+
+void* beatThread(void *arg);
+
+
+void BeatGenerator_setMode(int newMode);
+void BeatGenerator_changeBPM(int bpmChange);
+
+#endif
