@@ -28,8 +28,6 @@ int main() {
     AudioMixer_readWaveFileIntoMemory(BASE_DRUM_FILE, &baseDrum);
     AudioMixer_readWaveFileIntoMemory(HI_HAT_FILE, &hiHat);
     AudioMixer_readWaveFileIntoMemory(SNARE_FILE, &snare);
-    printf("wave samples: base=%d hat=%d snare=%d\n",
-       baseDrum.numSamples, hiHat.numSamples, snare.numSamples);
 
     pthread_t beatThreadId;
     pthread_create(&beatThreadId, NULL, beatThread, NULL);
