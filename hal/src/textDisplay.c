@@ -36,12 +36,10 @@ static void* displayThread(void* arg) {
 }
 
 void TextDisplay_init(void) {
-    Period_init(); // Initialize the provided timer module first
     pthread_create(&displayThreadId, NULL, displayThread, NULL);
 }
 
 void TextDisplay_cleanup(void) {
     stopping = true;
     pthread_join(displayThreadId, NULL);
-    Period_cleanup();
 }

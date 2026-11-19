@@ -21,3 +21,10 @@ add_custom_command(TARGET beatbox POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory ${DEPLOY_DIR}/beatbox-wav-files
     COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/wave-files ${DEPLOY_DIR}/beatbox-wav-files/
 )
+
+add_custom_command(TARGET beatbox POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory "$ENV{HOME}/ensc351/public/myApps/beatbox-server-copy"
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${CMAKE_SOURCE_DIR}/beatbox-server-copy"
+            "$ENV{HOME}/ensc351/public/myApps/beatbox-server-copy"
+)

@@ -14,7 +14,7 @@
 #define SPI_DEV "/dev/spidev0.0"
 #define JOYSTICK_Y_CHANNEL 0
 
-static bool stopping = false;
+static volatile bool stopping = false;
 static pthread_t joystickThreadId;
 static int spi_fd = -1;
 static pthread_mutex_t spiMutex = PTHREAD_MUTEX_INITIALIZER;

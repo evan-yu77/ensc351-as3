@@ -133,6 +133,8 @@ void AudioMixer_readWaveFileIntoMemory(char *fileName, wavedata_t *pSound)
 				pSound->numSamples, fileName, samplesRead);
 		exit(EXIT_FAILURE);
 	}
+
+	fclose(file);
 }
 
 void AudioMixer_freeWaveFileData(wavedata_t *pSound)
@@ -203,6 +205,8 @@ void AudioMixer_cleanup(void)
 	//  in addition to this by calling AudioMixer_freeWaveFileData() on that struct.)
 	free(playbackBuffer);
 	playbackBuffer = NULL;
+
+	snd_config_update_free_global();
 
 	printf("Done stopping audio...\n");
 	fflush(stdout);

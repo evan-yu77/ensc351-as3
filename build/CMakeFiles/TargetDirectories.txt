@@ -1,0 +1,3 @@
+/home/mitchell/ensc351/work/ensc351-as3/build/CMakeFiles/beatbox.dir
+/home/mitchell/ensc351/work/ensc351-as3/build/CMakeFiles/edit_cache.dir
+/home/mitchell/ensc351/work/ensc351-as3/build/CMakeFiles/rebuild_cache.dir

@@ -16,9 +16,9 @@
 #define MIN_CLICK_GAP_NS 5000000ULL
 #define SW_DEBOUNCE_NS 200000000ULL
 
-#define PIN_A_OFFSET 5  
-#define PIN_B_OFFSET 6 
-#define PIN_SW_OFFSET 7
+#define PIN_A_OFFSET 10 //GPIO 20
+#define PIN_B_OFFSET 9 //GPIO 21
+#define PIN_SW_OFFSET 7 //GPIO 16
 
 
 

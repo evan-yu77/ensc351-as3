@@ -9,7 +9,7 @@ extern wavedata_t hiHat;
 extern wavedata_t snare;
 
 static pthread_mutex_t beatMutex = PTHREAD_MUTEX_INITIALIZER;
-static bool stopping = false;
+static volatile bool stopping = false;
 
 static int currentBPM = 120;
 static int currentMode = 1; 
@@ -127,4 +127,8 @@ int BeatGenerator_getBPM(void) {
     int bpm = currentBPM;
     pthread_mutex_unlock(&beatMutex);
     return bpm;
+}
+
+void BeatGenerator_stop(void) { 
+    stopping = true; 
 }

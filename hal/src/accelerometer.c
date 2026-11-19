@@ -21,7 +21,7 @@ extern wavedata_t snare;
 
 extern int readADC(int channel);
 
-static bool stopping = false;
+static volatile bool stopping = false;
 static pthread_t accelThreadId;
 
 static void* accelerometerThread(void* arg) {

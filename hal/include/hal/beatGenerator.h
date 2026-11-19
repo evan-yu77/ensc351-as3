@@ -9,4 +9,6 @@ void BeatGenerator_changeBPM(int bpmChange);
 int BeatGenerator_getMode(void);
 int BeatGenerator_getBPM(void);
 
+void BeatGenerator_stop(void);
+
 #endif
